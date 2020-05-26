@@ -1,0 +1,107 @@
+
+
+<head>
+
+<link href="css/pori.css" rel="stylesheet"> 
+
+<h3 style="text-shadow:2px 2px 5px green; 
+text-align:center;text-decoration:underline;font-family:verdana;"> ONLINE TWES OBJECTIVE TEST PAPER - 3</h3>
+
+
+<button>Exam Timer <span id="timer"></span></button>
+
+
+<style>
+body{
+  background-color:;
+}
+
+button{
+  background-color:crimson;
+  color:white;
+  font-size:20px;
+  text-align:center;
+  float:right;
+  font-family;verdana;
+  border-radius:0px;
+}
+
+</style>
+
+<script>
+document.getElementById('timer').innerHTML =
+  5 + ":" + 00;
+startTimer();
+
+function startTimer() {
+  var presentTime = document.getElementById('timer').innerHTML;
+  var timeArray = presentTime.split(/[:]+/);
+  var m = timeArray[0];
+  var s = checkSecond((timeArray[1] - 1));
+  if(s==59){m=m-1}
+  //if(m<0){alert('timer completed')}
+  
+  document.getElementById('timer').innerHTML =
+    m + ":" + s;
+  setTimeout(startTimer, 1000);
+}
+
+function checkSecond(sec) {
+  if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+  if (sec < 0) {sec = "59"};
+  return sec;
+}
+
+</script>
+</head>
+
+
+
+<div class="container">
+
+<form class="navbar-form navbar-right" action="submit.html" method="post" onSubmit="return validateTextbox();">
+	     <div class="form-group">
+<input type="text" class="form-control" id="psw" placeholder="Enter staff code" data error= 6 characters required >         
+Q 25. <label for="subject">TOPIC ON THE RATIO ANALYSIS R1-9D<mark>&nbsp;[Submit the content in the required format]</label>
+	
+	<textarea id="subject" name="subject" placeholder="Write.." style="height:500px">       
+	</textarea>
+
+    <input type="submit" value="Submit" data error= min 16 characters required >
+	</div>
+    </form>
+<!--PAGINATION-->
+<style>
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color:red;
+    float:center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: green;
+    color: green;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+</style>
+
+<!--<div class="pagination">
+  <a href="#">&laquo;</a>
+  <!--<a href="active">1</a>-->
+ <!-- <a class="" href="test2.html">1</a>
+  <!--<a href="#">6</a>-->
+  <!--<a href="#">&raquo;</a>
+</div>
+
+
+
+
+
+
+

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="css/pori.css" rel="stylesheet"> 
+<h3 style="text-shadow:2px 2px 5px green;
+ text-align:center;text-decoration:underline;font-family:verdana;"> 
+ ONLINE TWES OBJECTIVE TEST PAPER - 2</h3>
+
+
+
+<button>Exam Timer <span id="timer"></span></button>
+
+
+<style>
+body{
+  background-color:;
+}
+
+button{
+  background-color:crimson;
+  color:white;
+  font-size:20px;
+  text-align:center;
+  float:right;
+  font-family;verdana;
+  border-radius:0px;
+}
+
+</style>
+
+<script>
+document.getElementById('timer').innerHTML =
+  05 + ":" + 00;
+startTimer();
+
+function startTimer() {
+  var presentTime = document.getElementById('timer').innerHTML;
+  var timeArray = presentTime.split(/[:]+/);
+  var m = timeArray[0];
+  var s = checkSecond((timeArray[1] - 1));
+  if(s==59){m=m-1}
+  //if(m<0){alert('timer completed')}
+  
+  document.getElementById('timer').innerHTML =
+    m + ":" + s;
+  setTimeout(startTimer, 1000);
+}
+
+function checkSecond(sec) {
+  if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+  if (sec < 0) {sec = "59"};
+  return sec;
+}
+
+</script>
+
+</head>
+
+
+<div class="container">
+
+    <form class="navbar-form navbar-right" action="submit.html" method="post" onSubmit="return validateTextbox();">
+	     <div class="form-group">
+    Q 1. &nbsp;<label for="fname">WHAT DOES THE DEVELOPMENT PROGRAMMING APTITUDE INVOLVE?</label>
+    <input type="text" id="fname" name="firstname" placeholder="" data error= 6 characters required >
+	
+	Q 2. <label for="fname">DATA CONTENT MBC?</label>
+    <input type="text" id="fname" name="firstname" placeholder="" data error= 6 characters required >
+
+	Q 3. <label for="fname">CONTENT MANAGEMENT IS SCRIPTED?</label>
+    <input type="text" id="fname" name="firstname" placeholder="" data error= 6 characters required >
+
+	Q 4. <label for="fname">STORAGE MECHANISM IS MONOLOG?</label>
+    <input type="text" id="fname" name="firstname" placeholder="" data error= 6 characters required >
+	
+    Q 5. <label for="fname">STRUCTURE METHOD IS DATA EQUALIZED?</label>
+    <input type="text" id="fname" name="firstname" placeholder="" data error= 6 characters required >
+	
+	
+    Q 6. <label for="fname">HOW IS THE MANAGEMENT OF THE TOPE END SERIES GENERATED?</label>
+    <input type="text" id="fname" name="firstname" placeholder="" data error= 6 characters required >
+	
+	Q 7. <label for="fname">C9-1 IS DEVELOPMENT OR PRODUCTION?</label>
+    <input type="text" id="fname" name="firstname" placeholder="" data error= 6 characters required >
+	
+	Q 8. <label for="fname">AD-NR DATA FORMATTING IS CODED OR SCRIPTED?</label>
+    <input type="text" id="fname" name="firstname" placeholder="" data error= 6 characters required >
+	
+	Q 9. <label for="fname">RNS BINDING IN REGULATED FORMAT SERIES IS UNDIVIDED?</label>
+    <input type="text" id="fname" name="firstname" placeholder="" data error= 6 characters required >
+	
+	Q 10. <label for="fname">DEMO-UN LOG IS DATA REGULATED?</label>
+    <input type="text" id="fname" name="firstname" placeholder="" data error= 6 characters required >
+
+    Q 11. <label for="lname">WHAT DOES BR-CODE IN REGENERATION MANAGEMENT?</label>
+    <input type="text" id="overseas employee Id" name="overseas Employee Id" placeholder="" data error= 6 characters required>
+    
+	Q 12. <label for="lname">FRC-11 IN MANAGEMENT?</label>
+    <input type="text" id="overseas employee Id" name="overseas Employee Id" placeholder="" data error= 6 characters required>
+    
+	Q 13. <label for="lname">CODE GENERATION TECHNIQUE VALIDATION?</label>
+    <input type="text" id="overseas employee Id" name="overseas Employee Id" placeholder="" data error= 6 characters required>
+    
+	Q 14. <label for="lname">STRUCTURE FORMATTING IN DCS-11?</label>
+    <input type="text" id="overseas employee Id" name="overseas Employee Id" placeholder="" data error= 6 characters required>
+
+    Q 15. <label for="lname">SYSTEM FORMAT SERIES-11?</label>
+    <input type="text" id="overseas employee Id" name="overseas Employee Id" placeholder="" data error= 6 characters required>
+    
+	Q 16. <label for="lname">WIDNET-14 FCS?</label>
+    <input type="text" id="overseas employee Id" name="overseas Employee Id" placeholder="" data error= 6 characters required>
+    
+	Q 17. <label for="lname">BRCS-146?</label>
+    <input type="text" id="overseas employee Id" name="overseas Employee Id" placeholder="" data error= 6 characters required>
+    
+	Q 18. <label for="lname">DNBS-456?</label>
+    <input type="text" id="overseas employee Id" name="overseas Employee Id" placeholder="" data error= 6 characters required>
+    
+	Q 19. <label for="lname">CODE FORMAT SERIES-11?</label>
+    <input type="text" id="overseas employee Id" name="overseas Employee Id" placeholder="" data error= 6 characters required>
+    
+	Q 20. <label for="lname">C-9M ?</label>
+    <input type="text" id="overseas employee Id" name="overseas Employee Id" placeholder="" data error= 6 characters required>
+   
+    Q 21. <label for="lname">DOLGONET-176 BASE?</label>
+    <input type="text" id="overseas employee Id" name="overseas Employee Id" placeholder="" data error= 6 characters required>
+    
+	Q 22. <label for="lname">S-1 PX-26?</label>
+    <input type="text" id="overseas employee Id" name="overseas Employee Id" placeholder="" data error= 6 characters required>
+    
+	Q 23. <label for="lname">VLX-456?</label>
+    <input type="text" id="overseas employee Id" name="overseas Employee Id" placeholder="" data error= 6 characters required>
+    
+	Q 24. <label for="lname">DK-9 SERIES ?</label>
+    <input type="text" id="overseas employee Id" name="overseas Employee Id" placeholder="" data error= 6 characters required>
+
+	Q 25. <label for="lname">SND-46 PLACED IN THE KP-10 FORMAT?</label>
+    <input type="text" id="overseas employee Id" name="overseas Employee Id" placeholder="" data error= 6 characters required>
+
+	
+	
+	
+	<!--Q 25. <label for="subject">TOPIC ON THE RATIO ANALYSIS R1-9D<mark>&nbsp;[The progress in the TWES pgm is shown as you fill in and submit the content]</label>
+    <textarea id="subject" name="subject" placeholder="Write.." style="height:200px">
+	</textarea>
+
+    <!--<input type="submit" value="Submit">
+
+	
+	<style>
+	
+	/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+<!--PAGINATION-->
+<style>
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color:red;
+    float: right;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: green;
+    color: green;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+</style>
+</head>
+<body>
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <!--<a href="active">1</a>-->
+  <a class="" href="test3.html">3</a>
+  <!--<a href="#">6</a>-->
+  <a href="#">&raquo;</a>
+</div>
+
+
+
+
+
+
+

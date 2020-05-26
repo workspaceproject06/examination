@@ -58,7 +58,6 @@ function checkSecond(sec) {
 
 
 <div class="container">
-
 <form class="navbar-form navbar-right">
 	     <div class="form-group">
 <input type="text" class="form-control" id="psw" placeholder="Enter staff code" data error= 6 characters required >         
@@ -67,11 +66,20 @@ Q 25. <label for="subject">TOPIC ON THE RATIO ANALYSIS R1-9D<mark>&nbsp;[Submit 
 	<textarea id="subject" name="subject" placeholder="Write.." style="height:500px">       
 	</textarea>
 
-		     <button class="success" href="submit.html">Submit</button>
+    <button class="button"><a href="submit.html" class="decoration">Submit</a></button>
 	</div>
     </form>
+
 <!--PAGINATION-->
 <style>
+.decoration{
+text-decoration:none;
+color:white;
+}
+.button{
+background-color:teal;
+padding:5px;
+}		
 .pagination {
     display: inline-block;
 }
